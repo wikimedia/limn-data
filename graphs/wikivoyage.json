@@ -1,0 +1,107 @@
+{
+    "graph_version": "0.6.0",
+    "id": "wikivoyage",
+    "desc": "Real world example of editorship on the Wikivoyage project",
+    "name": "Wikivoyage Editors",
+    "slug": "wikivoyage",
+    "root": {
+        "nodeType": "canvas",
+        "width": "auto",
+        "height": 500,
+        "children": [
+            {
+                "nodeType": "axis",
+                "options": {
+                    "orient": "bottom",
+                    "dimension": "x"
+                }
+            },
+            {
+                "nodeType": "axis",
+                "options": {
+                    "orient": "left",
+                    "dimension": "y"
+                }
+            },
+            {
+                "nodeType": "grid",
+                "options": {"dimension": "x"}
+            },
+            {
+                "nodeType": "grid",
+                "options": {"dimension": "y"}
+            },
+            {
+                "nodeType": "callout",
+                "metricRef": 0,
+                "options" : {
+                    "precision" : 2,
+                    "dateFormat" : "MMM YY"
+                }
+            },
+            {
+                "nodeType": "legend",
+                "options": {
+                    "label" : "Legend",
+                    "dateFormat" : "MMM YYYY"
+                }
+            },
+            {
+                "nodeType": "zoom-brush"
+            },
+            {
+                "nodeType": "line-group",
+                "children": [
+                    {
+                        "nodeType": "line",
+                        "metric": {
+                            "source_id": "rc_active_editors_count_project",
+                            "source_col": 11,
+                            "type": "int",
+                            "timespan": { "start": null, "end": null, "step": null }
+                        },
+                        "options": {
+                            "label": "Active Editors",
+                            "stroke": {
+                                "width": 3,
+                                "color": "#FF0000"
+                            }
+                        }
+                    },
+                    {
+                        "nodeType": "line",
+                        "metric": {
+                            "source_id": "rc_new_editors_count_project",
+                            "source_col": 10,
+                            "type": "int",
+                            "timespan": { "start": null, "end": null, "step": null }
+                        },
+                        "options": {
+                            "label": "New Editors",
+                            "stroke": {
+                                "width": 3,
+                                "color": "#0043B6"
+                            }
+                        }
+                    },
+                    {
+                        "nodeType": "line",
+                        "metric": {
+                            "source_id": "rc_very_active_editors_count_project",
+                            "source_col": 9,
+                            "type": "int",
+                            "timespan": { "start": null, "end": null, "step": null }
+                        },
+                        "options": {
+                            "label": "Very Active Editors",
+                            "stroke": {
+                                "width": 3,
+                                "color": "#C00000"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

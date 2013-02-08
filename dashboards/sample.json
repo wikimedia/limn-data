@@ -1,0 +1,31 @@
+{
+    "id"       : "sample",
+    "headline" : "Wikimedia Limn",
+    "subhead"  : "Sample Graphs",
+    "tabs": [
+        {
+            "name": "Timeseries",
+            "graph_ids": [
+                "pageviews_mobile_target_stacked",
+                "wikivoyage",
+                "timeseries_example"
+            ]
+        }, {
+            "name": "Geo",
+            "graph_ids": [
+                "editors_by_geo"
+            ]
+        }, {
+            "name": "Ordinal",
+            "graph_ids": [
+                "ordinal_example"
+            ]
+        }, {
+            "name": "Remote",
+            "graph_ids": [
+                "mobile_packet_loss",
+                "pageviews_mobile_hourly"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+id: rc_page_requests_mobile
+name: Mobile Page Request
+shortName : Mobile
+format: csv
+type: timeseries
+url: /data/datafiles/example/rc_page_requests_mobile.csv
+
+columns:
+    labels:
+    - Month
+    - Total
+    - English Mobile
+    - Japanese Mobile
+    - German Mobile
+    - Spanish Mobile
+    - French Mobile
+    - Russian Mobile
+    - Italian Mobile
+    types:
+    - date
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+chart:
+    chartType: dygraphs

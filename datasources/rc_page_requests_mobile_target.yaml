@@ -1,0 +1,18 @@
+id: rc_page_requests_mobile_target
+name: Target for Mobile Page Requests
+shortName: Target Mobile
+format: csv
+type: timeseries
+url: /data/datafiles/example/rc_page_requests_mobile_target.csv
+
+columns:
+    - label: Month
+      type: date
+    - label: Mobile Web Projection
+      type: int
+    - label: Zero Projection
+      type: int
+    - label: Zero Gap Projection
+      type: int
+    - label: Targets
+      type: int

@@ -1,0 +1,35 @@
+id: rc_comscore_region_uv
+name: Unique Visitors for All Wikimedia Projects
+shortName : Unique Visitors
+format: csv
+type: timeseries
+url: /data/datafiles/example/rc_comscore_region_uv.csv
+
+timespan:
+    end: 2012/06/01
+    start: 2008/01/01
+    step: 1mo
+
+columns:
+    labels:
+    - Month
+    - World
+    - Asia Pacific
+    - China
+    - Europe
+    - India
+    - Latin America
+    - Middle East/Africa
+    - North America
+    types:
+    - date
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+    - int
+chart:
+    chartType: dygraphs
