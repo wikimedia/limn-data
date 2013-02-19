@@ -12,7 +12,7 @@
 cd /path/to/limn/../
 clone git@github.com:wikimedia/limn-data.git
 cd /path/to/limn
-coke --data ../../../../limn-data --to example link_data
+coke --vardir ./var --data ../../../../limn-data --to example link_data
 npm start
 ```
 
