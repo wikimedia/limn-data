@@ -6,13 +6,20 @@
 ## Using with Limn
 
  * Install [Limn][limn]
+
+```
+git clone git@github.com:wikimedia/limn.git
+cd /path/to/limn
+npm install
+```
+
  * Link [Limn][limn] to [Limn Data][limn_data]
 
 ```
-cd /path/to/limn/../
-clone git@github.com:wikimedia/limn-data.git
+cd /path/not/under/limn
+git clone git@github.com:wikimedia/limn-data.git
 cd /path/to/limn
-coke --vardir ./var --data ../../../../limn-data --to example link_data
+coke --vardir ./var --data /path/to/limn-data --to example link_data
 npm start
 ```
 
