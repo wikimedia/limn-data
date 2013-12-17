@@ -1,14 +1,14 @@
 id: test_series
-name: Test datasource for series data
-shortName : Series
+name: Test datasource for ordinal data
+shortName : Ordinal
 format: csv
 type: series
 url: /data/datafiles/example/test_series.csv
 
 columns:
-    labels:
-    - South America
-    - Europe
-    types:
-    - int
-    - int
+    -   id    : continent
+        label : Continent
+        type  : string
+    -   id    : measurement
+        label : Measurement
+        type  : Number

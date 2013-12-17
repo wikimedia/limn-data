@@ -7,7 +7,7 @@
     "tags"   : [],
     
     "root" : {
-        "nodeType" : "canvas-series",
+        "nodeType" : "canvas",
         "width"    : "auto",
         "height"   : 500,
         "children" : [
@@ -52,51 +52,8 @@
                     {
                         "nodeType": "ordinal-bar",
                         "metric": {
-                            "source_id": "test_series",
-                            "source_col": 0,
-                            "type": "int"
-                        },
-                        "options": {
-                            "label" : "South America",
-                            "stroke": {
-                                "color" : "#0A9CFF"
-                            }
-                        }
-                    },
-                    {
-                        "nodeType": "ordinal-bar",
-                        "metric": {
-                            "source_id": "test_series",
-                            "source_col": 1,
-                            "type": "int"
-                        },
-                        "options": {
-                            "label" : "Europe",
-                            "stroke": {
-                                "color" : "#F92672"
-                            }
-                        }
-                    },
-                    {
-                        "nodeType": "ordinal-bar",
-                        "metric": {
-                            "source_id": "test_series",
-                            "source_col": 2,
-                            "type": "int"
-                        },
-                        "options": {
-                            "label" : "Asia"
-                        }
-                    },
-                    {
-                        "nodeType": "ordinal-bar",
-                        "metric": {
-                            "source_id": "test_series",
-                            "source_col": 3,
-                            "type": "int"
-                        },
-                        "options": {
-                            "label" : "Africa"
+                            "sourceId": "test_series",
+                            "sourceCol": "measurement"
                         }
                     }
                 ]
