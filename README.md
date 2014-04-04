@@ -19,12 +19,13 @@ npm install
 cd /path/not/under/limn
 git clone git@github.com:wikimedia/limn-data.git
 cd /path/to/limn
-coke --vardir ./var --data /path/to/limn-data --to example link_data
+coke --vardir ./var --data /absolute/path/to/limn-data --to example link_data
 npm start
 ```
 
+ * IMPORTANT: use an absolute path as your --data parameter.  Relative paths are possible but harder to explain
  * Browse [A Sample Dashboard][sample_dashboard]
 
 [limn_data]: https://github.com/wikimedia/limn-data "Limn Data on GitHub"
 [limn]: https://github.com/wikimedia/limn "Limn on GitHub"
-[sample_dashboard]: http://localhost:8081/dashboards/sample
+[sample_dashboard]: http://localhost:5000/dashboards/sample
